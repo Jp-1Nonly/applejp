@@ -7,6 +7,20 @@
 }
 
 
+.imagen-container {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-responsive {
+    width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+    max-width: 1300px; /* La imagen no se ampliará más allá de su tamaño original */
+}
+
 
 
 
