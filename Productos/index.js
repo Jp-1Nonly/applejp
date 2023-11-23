@@ -125,3 +125,16 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+
+const vaciarCarrito = () => {
+    allProducts = [];
+    showHTML();
+};
+
+// Asigna la función al botón de vaciar carrito
+const btnVaciarCarrito = document.querySelector('.btn-vaciar-carrito');
+btnVaciarCarrito.addEventListener('click', vaciarCarrito);
+
+
+
+

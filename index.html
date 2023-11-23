@@ -35,6 +35,28 @@
                 margin-left: 20px;
                 cursor: pointer;
             }
+
+            h1 {
+                text-align: center;
+              }
+
+              .black-button {
+                background-color: #000; /* Color negro */
+                color: #fff; /* Texto blanco */
+                padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+                border: none; /* Sin borde */
+                border-radius: 5px; /* Bordes redondeados */
+                cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            }
+            
+            /* Estilo adicional para cambiar el color del botón al pasar el ratón sobre él */
+            .black-button:hover {
+                background-color: #333; /* Color ligeramente más oscuro al pasar el ratón */
+            }
+            
+
+
+
         </style>
 
 
@@ -74,8 +96,11 @@
         -->
 
 
-
+        <div class="centrar-boton" >
+            <br><h1>Nuevos productos</h1><br>
+        </div>
         <div class="imagen-container">
+            
             <img src="images/3en1.png" alt="" class="imagen-responsive">
         </div>
 
@@ -92,21 +117,16 @@
         </div>
         <div class="section-3">
             <img src="./images/iphone-14-mockup-png-890-download-96223.png" alt="phone">
-            <h1> Nuevo diseño
-            </h1>
+            <h1> Nuestros productos</h1>
+            
+            <button onclick="window.location.href='Productos/index.html'" class="black-button">Ver productos</button>
         </div>
-
-        <iframe src="https://chromedino.com/batman/" frameborder="0" scrolling="no" width="100%" height="100%"
-            loading="lazy"></iframe>
-        <style type="text/css">
-            iframe {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                z-index: 999;
-            }
-        </style>
         
+        
+        
+        
+
+
         <div class="menu-items">
             <div class="store">
                 <img src="./images/png-apple-logo-9711.png" alt="logo">
@@ -156,22 +176,7 @@
             </div>
         </div>
     </div>
-    <script>
-        let nav_list = document.getElementById('nav-list')
-        let openMenu = document.querySelector('.menuopen')
-        let cross = document.querySelector('.cross')
-        openMenu.addEventListener('click', () => {
-            nav_list.style.opacity = '100%'
-            openMenu.style.display = 'none'
-        })
-        cross.addEventListener('click', () => {
-            nav_list.style.opacity = '0%';
-            setTimeout(() => {
-                openMenu.style.display = 'block'
-            }, 400)
-        })
-
-    </script>
+    <script src="idx.js"></script>
 </body>
 
 </html>
