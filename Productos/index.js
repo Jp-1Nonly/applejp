@@ -7,14 +7,14 @@ btnCart.addEventListener('click', () => {
 	containerCartProducts.classList.toggle('hidden-cart');
 });
 
-/* ========================= */
+
 const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
-// Lista de todos los contenedores de productos
+
 const productsList = document.querySelector('.container-items');
 
-// Variable de arreglos de Productos
+
 let allProducts = [];
 
 const valorTotal = document.querySelector('.total-pagar');
@@ -71,7 +71,7 @@ rowProduct.addEventListener('click', e => {
 	}
 });
 
-// Funcion para mostrar  HTML
+
 const showHTML = () => {
 	if (!allProducts.length) {
 		cartEmpty.classList.remove('hidden');
@@ -83,7 +83,7 @@ const showHTML = () => {
 		cartTotal.classList.remove('hidden');
 	}
 
-	// Limpiar HTML
+	
 	rowProduct.innerHTML = '';
 
 	let total = 0;
@@ -131,7 +131,7 @@ const vaciarCarrito = () => {
     showHTML();
 };
 
-// Asigna la función al botón de vaciar carrito
+
 const btnVaciarCarrito = document.querySelector('.btn-vaciar-carrito');
 btnVaciarCarrito.addEventListener('click', vaciarCarrito);
 

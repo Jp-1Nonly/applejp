@@ -202,22 +202,22 @@ header{
 }
 
 .logo-image {
-    width: 10px; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: auto; /* Esto asegura que la altura se ajuste proporcionalmente al ancho */
+    width: 10px; 
+    height: auto; 
 }
 
 
 
-/* Estilos para centrar el botón */
+
 .centrar-botones {
   text-align: center;
 }
 
 .btn-vaciar-carrito {
-  /* Estilos para el botón si es necesario */
+ 
   padding: 10px 20px;
   font-size: 16px;
-  /* Otros estilos que desees agregar */
+
 }
 
 .centrar-boton {

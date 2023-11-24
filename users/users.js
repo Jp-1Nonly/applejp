@@ -25,7 +25,8 @@ function validateLogin() {
 
     if (user) {
         alert('Inicio de sesión exitoso');
-        window.location.href = 'index.html';
+        
+        window.location.href = '../index.html';
     } else {
         alert('Credenciales incorrectas');
     }
